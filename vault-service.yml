@@ -1,0 +1,9 @@
+server:
+  port: 9420
+
+spring:
+  datasource: 
+    url: jdbc:postgresql://localhost:5432/razorpay-vault-db
+
+vault:
+  master-key: I5FgxzYQd9zL4u7u6zPj2yXxX1h2iTqvV9a6Yg7N8n0=
