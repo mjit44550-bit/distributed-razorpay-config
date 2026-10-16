@@ -38,7 +38,8 @@ spring:
               uri: lb://operations-service
               predicates:
                 - Path=/v1/operations/**
-        
+
+MERCHANT_SERVICE_URI: http://localhost:9010        
 
             
 
