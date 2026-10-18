@@ -27,17 +27,17 @@ spring:
                 - Path=/v1/auth/**, /v1/merchants/**
 
             - id: payment-service
-              uri: ${PAYMENT_SERVICE_URI:lb://payment-service}
+              uri: ${PAYMENT_SERVICE_URI:lb://localhost:9020}
               predicates:
                 - Path=/v1/orders/**, /v1/payments/**
 
             - id: vault-service
-              uri: ${VAULT_SERVICE_URI:lb://vault-service}
+              uri: ${VAULT_SERVICE_URI:lb://localhost:9040}
               predicates:
                 - Path=/v1/vault/**
 
             - id: operations-service
-              uri: ${OPERATIONS_SERVICE_URI:lb://operations-service}
+              uri: ${OPERATIONS_SERVICE_URI:lb://localhost:9030}
               predicates:
                 - Path=/webhook/**
 jwt:
