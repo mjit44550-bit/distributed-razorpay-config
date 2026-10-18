@@ -22,7 +22,7 @@ spring:
         webmvc:
           routes:
             - id: merchant-service
-              uri: ${MERCHANT_SERVICE_URI:lb://localhost:9010}
+              uri: ${MERCHANT_SERVICE_URI:lb://merchant-service}
               predicates:
                 - Path=/v1/auth/**, /v1/merchants/**
 
