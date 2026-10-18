@@ -100,7 +100,7 @@ management:
     tracing:
       endpoint: http://zipkin.razorpay-core.svc.cluster.local:9411/api/v2/spans
 
-MERCHANT_SERVICE_URI: http://merchant-service
+MERCHANT_SERVICE_URI: http://localhost:9010
 PAYMENT_SERVICE_URI: http://localhost:9020
 VAULT_SERVICE_URI: http://localhost:9040
 OPERATIONS_SERVICE_URI: http://localhost:9030
