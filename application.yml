@@ -70,9 +70,9 @@ app:
       settlement: settlement.events
 
 MERCHANT_SERVICE_URI: http://localhost:9010
-PAYMENT_SERVICE_URI: http://payment-service
-VAULT_SERVICE_URI: http://vault-service
-OPERATIONS_SERVICE_URI: http://operations-service
+PAYMENT_SERVICE_URI: http://localhost:9020
+VAULT_SERVICE_URI: http://localhost:9040
+OPERATIONS_SERVICE_URI: http://localhost:9030
 
 ---
 
