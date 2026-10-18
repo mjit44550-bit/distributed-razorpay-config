@@ -27,20 +27,19 @@ spring:
                 - Path=/v1/auth/**, /v1/merchants/**
 
             - id: payment-service
-              uri: ${PAYMENT_SERVICE_URI:lb://localhost:9020}
+              uri: ${PAYMENT_SERVICE_URI:lb://payment-service}
               predicates:
                 - Path=/v1/orders/**, /v1/payments/**
 
             - id: vault-service
-              uri: ${VAULT_SERVICE_URI:lb://localhost:9040}
+              uri: ${VAULT_SERVICE_URI:lb://vault-service}
               predicates:
                 - Path=/v1/vault/**
 
             - id: operations-service
-              uri: ${OPERATIONS_SERVICE_URI:lb://localhost:9030}
+              uri: ${OPERATIONS_SERVICE_URI:lb://operations-service}
               predicates:
                 - Path=/webhook/**
-
 jwt:
   secret-key: vK9mR2xQ7pL4nT8wY6zA1cF5hJ3sD0uBqE9gN2iX7oM4rW8kP6tV1yZ5aC3fH0jM
 
