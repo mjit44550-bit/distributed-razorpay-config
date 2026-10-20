@@ -76,6 +76,7 @@ OPERATIONS_SERVICE_URI: http://localhost:9030
 
 ---
 
+
 spring:
   config:
     activate:
@@ -104,3 +105,8 @@ management:
   zipkin:
     tracing:
       endpoint: http://zipkin.razorpay-core.svc.cluster.local:9411/api/v2/spans
+
+MERCHANT_SERVICE_URI: http://merchant-service
+PAYMENT_SERVICE_URI: http://payment-service
+VAULT_SERVICE_URI: http://vault-service
+OPERATIONS_SERVICE_URI: http://operations-service
